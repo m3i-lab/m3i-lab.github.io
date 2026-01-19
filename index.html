@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanisms of microbial metabolic interactions (m3i)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+    
+    /* Navigation */
+    nav {
+      position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px); padding: 1rem 2rem; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    nav .logo { font-weight: 700; font-size: 1.2rem; color: #ba139b; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav a { text-decoration: none; color: #555; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: #ba139b; }
+    
+    /* Sections */
+    section { padding: 5rem 2rem; max-width: 1000px; margin: 0 auto; }
+    section:first-of-type { padding-top: 8rem; }
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #1e293b; }
+    h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: #1e293b; border-bottom: 3px solid #ba139b; padding-bottom: 0.5rem; display: inline-block; }
+    p { color: #555; margin-bottom: 1rem; }
+    
+    /* Hero */
+    #hero { text-align: center; padding-top: 10rem; }
+    #hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+    
+    /* Mission */
+    #mission {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      border-radius: 16px;
+      padding: 3rem;
+      margin: 2rem auto;
+    }
+    #mission .highlight {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1e293b;
+      border-left: 4px solid #ba139b;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* People Grid */
+    .people-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem; margin-top: 2rem;
+    }
+    .person { text-align: center; }
+    .person img {
+      width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+      border: 4px solid #e2e8f0; margin-bottom: 1rem;
+    }
+    .person h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .person span { font-size: 0.85rem; color: #666; }
+    
+    /* Topics */
+    .topics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .topic-card {
+      background: #f8fafc; padding: 1.5rem; border-radius: 12px;
+      border-left: 4px solid #ba139b;
+    }
+    .topic-card h3 { margin-bottom: 0.5rem; color: #1e293b; }
+    .topic-card p {
+      text-align: justify;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+    
+    /* Papers */
+    .paper { padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0; }
+    .paper h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .paper .authors { font-size: 0.9rem; color: #666; }
+    .paper .venue {
+      font-size: 0.85rem;
+      color: #2563eb;
+      font-weight: 600;
+      display: inline;
+    }
+    .paper .links {
+      display: inline;
+      margin-left: 1rem;
+    }
+    .paper .links a {
+      font-size: 0.85rem;
+      color: #333;
+      text-decoration: none;
+      margin-right: 0.75rem;
+    }
+    .paper .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Teaching */
+    .course { padding: 1rem 0; border-bottom: 1px solid #e2e8f0; }
+    .course h3 { font-size: 1rem; }
+    .course span { font-size: 0.9rem; color: #666; }
+    
+    /* Join */
+    #join { background: #f8fafc; border-radius: 16px; margin: 2rem auto; }
+    #join p { max-width: 600px; }
+    .btn {
+      display: inline-block; background: #ba139b; color: white; padding: 0.75rem 1.5rem;
+      border-radius: 8px; text-decoration: none; margin-top: 1rem; transition: background 0.2s;
+    }
+    .btn:hover { background: #1d4ed8; }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      h1 { font-size: 1.8rem; }
+      section { padding: 3rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">m3i: microbial interactions</div>
+  <ul>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#people">People</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#papers">Papers</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#join">Join</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <h1>🔬 Mechanisms of microbial metabolic interactions (m3i)</h1>
+  <p>We study microbial interactions by infering traits from omics data and simulating microbiomes using metabolic models.</p>
+</section>
+
+<section id="mission">
+  <h2>Mission</h2>
+  <p class="highlight">We are dedicated to understand what makes microbes to interact. Our research combines computational and ecological approaches to entangle microbial communities. We believe in open science, collaborative research, and training the next generation of scientists. <br> Based at <a href="https://www.uni-jena.de/en">Friedrich-Schiller University Jena</a> in Germany and Cluster of Excellence <a href="https://www.microverse-cluster.de/en/">Balance of the Microverse</a>, we work at the intersection of functional ecology, metabolic modeling, and microbial physiology.</p>
+</section>
+
+<section id="people">
+  <h2>People</h2>
+  <div class="people-grid">
+    <div class="person">
+      <img src="https://www.jsmc-phd.de/assets/images/a/Zimmermann-f1ad53b6.jpg" alt="Johannes Zimmermann">
+      <h3>Johannes Zimmermann</h3>
+      <span>Principal Investigator</span>
+    </div>
+    <div class="person">
+      <img src="https://www.microverse-cluster.de/assets/images/d/manisha-goyal-70c0e5c0.jpg" alt="Manisha Goyal">
+      <h3>Manisha Goyal</h3>
+      <span>Postdoctoral Researcher</span>
+    </div>
+    <div class="person">
+      <img src="https://www.microverse-cluster.de/assets/images/d/garima_kalakoti-3-acfd470d.jpg" alt="Garima Kalakoti">
+      <h3>Garima Kalakoti</h3>
+      <span>PhD Student</span>
+    </div>
+    <div class="person">
+      <img src="https://i.pravatar.cc/150?img=25" alt="Süleyman Nakilcioğlu">
+      <h3>Süleyman Nakilcioğlu</h3>
+      <span>Master Student</span>
+    </div>
+  </div>
+</section>
+
+<section id="topics">
+  <h2>Research Topics</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <h3>Life histories</h3>
+      <p>Microbes have long evolutionary past that enables and limits their mode of actions. We ask what are the trade-offs and strategies they use to thrive? What is different in host-associated mirobiomes like C. elegans?</p>
+    </div>
+    <div class="topic-card">
+      <h3>Diversity and metabolism</h3>
+      <p>Metabolism is the main driver of microbial diversity. We explore metabolic networks and focus on redox processes. How do oxygen preference and fermentation affect interactions?</p>
+    </div>
+    <div class="topic-card">
+      <h3>Community models</h3>
+      <p>Microbes are never alone! We build metabolic and trait-based models to study community interactions and dynamics. Besides metabolism, what is the effects of microbial predation?</p>
+    </div>
+  </div>
+</section>
+
+<section id="papers">
+  <h2>Selected Papers</h2>
+  <div class="paper">
+    <h3>gapseq: informed prediction of bacterial metabolic pathways and reconstruction of accurate metabolic models</h3>
+    <p class="authors">Zimmermann, J., Kaleta, C. & Waschina, S.</p>
+    <p class="venue">Genome Biology, 2021</p><span class="links"><a href="https://doi.org/10.1186/s13059-021-02295-1">(10.1186/s13059-021-02295-1)</a></span>
+  </div>
+  <div class="paper">
+    <h3>BacArena: Individual-Based Metabolic Modeling of Heterogeneous Microbes in Complex Communities</h3>
+    <p class="authors">Bauer, E., Zimmermann, J., Baldini, F., Thiele, I., and Kaleta, C.</p>
+    <p class="venue">PLOS Computational Biology, 2017</p><span class="links"><a href="https://doi.org/10.1371/journal.pcbi.1005544">(10.1371/journal.pcbi.1005544)</a></span>
+  </div>
+   <div class="paper">
+    <h3>The Functional Repertoire Contained within the Native Microbiota of the Model Nematode Caenorhabditis elegans</h3>
+    <p class="authors">Zimmermann, J, Obeng, N, Wentao, Y, et al.</p>
+    <p class="venue">ISME, 2020</p><span class="links"><a href="https://doi.org/10.1038/s41396-019-0504-y">(10.1038/s41396-019-0504-y)</a></span>
+  </div>
+  <div class="paper">
+    <h3>Gut-associated functions are favored during microbiome assembly across a major part of C. elegans life</h3>
+    <p class="authors">Zimmermann, J., Piecyk, A, Sieber, M. et al.</p>
+    <p class="venue">mBio, 2024</p><span class="links"><a href="https://doi.org/10.1128/mbio.00012-24">(10.1128/mbio.00012-24)</a></span>
+  </div>
+  <div class="paper">
+    <h3>Role of microbial life history strategy in shaping the characteristics and evolution of host-microbiota interactions</h3>
+    <p class="authors">Obeng, N., Zimmermann, J., Czerwinski, A., Fuß, J. & Schulenburg, H.</p>
+    <p class="venue">ISME, 2025</p><span class="links"><a href="https://doi.org/10.1093/ismejo/wraf168">(10.1093/ismejo/wraf168)</a></span>
+  </div>
+  <div class="paper">
+    <h3>Comparative Analysis of Novel Pseudobdellovibrionaceae Genera and Species Yields Insights into the Genomics and Evolution of Bacterial Predation Mode</h3>
+    <p class="authors">Maher, R. L., Wülbern, J., Zimmermann, J., et al. 2025</p>
+    <p class="venue">ISME Communications, 2025 (accepted)</p><span class="links"><a href="https://doi.org/10.1101/2025.02.19.638989">(10.1101/2025.02.19.638989)</a></span>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <div class="course">
+    <h3>Microbial diversity and ecology</h3>
+    <span>Bachelor's course · Summer semester 2025 (together with Martina Herrmann and Maria Mittag)</span>
+  </div>
+  <div class="course">
+    <h3>Mathematical biology</h3>
+    <span>Master's course · Winter semester 2025/6 (together with Stefan Schuster and Rosalind Allen)</span>
+  </div>
+</section>
+
+<section id="join">
+  <h2>Join Us</h2>
+  <p>We're always looking for motivated students and researchers to join our team. We offer a collaborative environment, access to state-of-the-art resources, and opportunities to work on cutting-edge problems.</p>
+  <p><strong>Open positions:</strong> Bachelor and Master's thesis students</p>
+  <a href="mailto:johannes.zimmermann@uni-jena.de" class="btn">Get in Touch</a>
+</section>
+
+</body>
+</html>

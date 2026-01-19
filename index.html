@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mechanisms of microbial metabolic interactions (m3i)</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
@@ -60,7 +61,26 @@
     }
     .person h3 { font-size: 1rem; margin-bottom: 0.25rem; }
     .person span { font-size: 0.85rem; color: #666; }
-    
+    .person a img {
+      transition: transform 0.2s;
+    }
+    .person a img:hover {
+      transform: scale(1.05);
+    }
+    .person .social {
+      margin-top: 0.5rem;
+    }
+    .person .social a {
+      color: #666;
+      margin: 0 0.4rem;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    .person .social a:hover {
+      color: #2563eb;
+    }
+
+
     /* Topics */
     .topics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
     .topic-card {
@@ -148,20 +168,44 @@
   <h2>People</h2>
   <div class="people-grid">
     <div class="person">
-      <img src="https://www.jsmc-phd.de/assets/images/a/Zimmermann-f1ad53b6.jpg" alt="Johannes Zimmermann">
+      <a href="people/johannes.html"><img src="https://www.jsmc-phd.de/assets/images/a/Zimmermann-f1ad53b6.jpg" alt="Johannes Zimmermann"></a>
       <h3>Johannes Zimmermann</h3>
       <span>Principal Investigator</span>
+      <div class="social">
+        <!--<a href="https://linkedin.com/in/..." title="LinkedIn"><i class="fab fa-linkedin"></i></a>-->
+        <a href="https://scholar.google.com/citations?user=5zS3t_YAAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/jotech" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/_jozimmermann" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:johannes.zimmermann@uni-jena.de" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+
     <div class="person">
-      <img src="https://www.microverse-cluster.de/assets/images/d/manisha-goyal-70c0e5c0.jpg" alt="Manisha Goyal">
+      <a href="people/manisha.html"><img src="https://www.microverse-cluster.de/assets/images/d/manisha-goyal-70c0e5c0.jpg" alt="Manisha Goyal"></a>
       <h3>Manisha Goyal</h3>
       <span>Postdoctoral Researcher</span>
+      <div class="social">
+        <a href="https://scholar.google.de/citations?user=vIqSjuYAAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://in.linkedin.com/in/manisha-goyal-84660059" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <!--<a href="https://github.com/..." title="GitHub"><i class="fab fa-github"></i></a>-->
+        <!--<a href="https://twitter.com/..." title="Twitter"><i class="fab fa-x-twitter"></i></a>-->
+        <a href="mailto:manisha.goyal@uni-jena.de" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+
     <div class="person">
-      <img src="https://www.microverse-cluster.de/assets/images/d/garima_kalakoti-3-acfd470d.jpg" alt="Garima Kalakoti">
+      <a href="people/garima.html"><img src="https://www.microverse-cluster.de/assets/images/d/garima_kalakoti-3-acfd470d.jpg" alt="Garima Kalakoti"></a>
       <h3>Garima Kalakoti</h3>
       <span>PhD Student</span>
+      <div class="social">
+        <a href="https://scholar.google.de/citations?user=Ui5EhY0AAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://de.linkedin.com/in/garima-kalakoti-253275141" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rebminso" title="GitHub"><i class="fab fa-github"></i></a>
+        <!--<a href="https://twitter.com/..." title="Twitter"><i class="fab fa-x-twitter"></i></a>-->
+        <a href="mailto:garima.kalakoti@uni-jena.de" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+
     <div class="person">
       <img src="https://i.pravatar.cc/150?img=25" alt="Süleyman Nakilcioğlu">
       <h3>Süleyman Nakilcioğlu</h3>

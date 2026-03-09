@@ -46,6 +46,7 @@
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   opacity: 0.4;
+  object-fit: cover;
 }
 #hero h1, #hero p, #hero .keywords { position: relative; z-index: 1; }
 #hero h1 { font-size: 2.8rem; color: #0f172a; }
@@ -188,69 +189,8 @@
 </nav>
 
 <section id="hero">
-  <svg class="network-bg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
-    <!-- Connections (thin filaments) -->
-    <g stroke="#94a3b8" stroke-width="1.5" fill="none" opacity="0.6">
-      <!-- Main cluster connections -->
-      <path d="M120,180 Q150,150 200,160" />
-      <path d="M200,160 Q260,140 320,170" />
-      <path d="M320,170 Q380,200 420,180" />
-      <path d="M420,180 Q500,160 560,190" />
-      <path d="M560,190 Q620,220 680,180" />
-      <!-- Cross connections -->
-      <path d="M200,160 Q220,220 260,280" />
-      <path d="M320,170 Q350,240 380,300" />
-      <path d="M420,180 Q440,250 480,310" />
-      <path d="M560,190 Q540,260 520,320" />
-      <!-- Lower cluster -->
-      <path d="M260,280 Q320,300 380,300" />
-      <path d="M380,300 Q430,320 480,310" />
-      <path d="M480,310 Q500,330 520,320" />
-      <!-- Outer connections -->
-      <path d="M80,120 Q100,150 120,180" />
-      <path d="M680,180 Q720,160 750,180" />
-      <path d="M160,320 Q200,300 260,280" />
-      <path d="M600,350 Q560,340 520,320" />
-    </g>
-    
-    <!-- Large microbes (irregular shapes) -->
-    <g fill="#22c55e" opacity="0.7">
-      <ellipse cx="200" cy="160" rx="25" ry="18" transform="rotate(-15 200 160)"/>
-      <ellipse cx="420" cy="180" rx="30" ry="20" transform="rotate(10 420 180)"/>
-      <ellipse cx="380" cy="300" rx="22" ry="16" transform="rotate(-20 380 300)"/>
-    </g>
-    
-    <!-- Medium microbes -->
-    <g fill="#3b82f6" opacity="0.6">
-      <ellipse cx="320" cy="170" rx="18" ry="12" transform="rotate(25 320 170)"/>
-      <ellipse cx="560" cy="190" rx="20" ry="14" transform="rotate(-10 560 190)"/>
-      <ellipse cx="260" cy="280" rx="16" ry="11" transform="rotate(15 260 280)"/>
-      <ellipse cx="520" cy="320" rx="15" ry="10" transform="rotate(-25 520 320)"/>
-    </g>
-    
-    <!-- Small microbes (cocci) -->
-    <g fill="#a855f7" opacity="0.5">
-      <circle cx="120" cy="180" r="10"/>
-      <circle cx="680" cy="180" r="12"/>
-      <circle cx="480" cy="310" r="9"/>
-      <circle cx="80" cy="120" r="7"/>
-      <circle cx="750" cy="180" r="8"/>
-      <circle cx="160" cy="320" r="8"/>
-      <circle cx="600" cy="350" r="7"/>
-    </g>
-    
-    <!-- Tiny particles/metabolites -->
-    <g fill="#f59e0b" opacity="0.4">
-      <circle cx="170" cy="140" r="3"/>
-      <circle cx="270" cy="190" r="2.5"/>
-      <circle cx="370" cy="160" r="3"/>
-      <circle cx="490" cy="200" r="2"/>
-      <circle cx="620" cy="170" r="3"/>
-      <circle cx="300" cy="260" r="2.5"/>
-      <circle cx="450" cy="290" r="2"/>
-      <circle cx="540" cy="280" r="3"/>
-    </g>
-  </svg>
+<img class="network-bg" src="img/bg-1280-720-max.png" alt="">
+
   <h1>🧬 Mechanisms of microbial metabolic interactions (m3i)</h1>
   <p>🔬 We study microbial interactions by infering traits from omics data and simulating microbiomes using metabolic models.</p>
   <div class="keywords">
@@ -278,7 +218,7 @@
         <!--<a href="https://linkedin.com/in/..." title="LinkedIn"><i class="fab fa-linkedin"></i></a>-->
         <a href="https://scholar.google.com/citations?user=5zS3t_YAAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/jotech" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/_jozimmermann" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://twitter.com/_jozimmermann" title="Twitter"><i class="fab fa-twitter"></i></a>
         <a href="mailto:johannes.zimmermann@uni-jena.de" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
@@ -310,9 +250,12 @@
     </div>
 
     <div class="person">
-      <img src="https://i.pravatar.cc/150?img=25" alt="Süleyman Nakilcioğlu">
+      <img src="img/Sueleyman_small.png" alt="Süleyman Nakilcioğlu">
       <h3>Süleyman Nakilcioğlu</h3>
       <span>Master Student</span>
+      <div class="social">
+      <a href="mailto:sueleyman.nakilcioglu@uni-jena.de" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </div>
 </section>

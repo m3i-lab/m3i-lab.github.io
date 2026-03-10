@@ -59,12 +59,12 @@
   flex-wrap: wrap;
 }
 #hero .keywords span {
-  background: rgba(34, 197, 94, 0.15);
-  color: #15803d;
+  background: #f0f4fd;
+  color: #ba139b;
   padding: 0.4rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  border: 1px solid #f8bfed;
 }
     
     /* Mission */
@@ -117,7 +117,7 @@
 
     /* Topics */
     .topics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .topic-card {
+   /* .topic-card {
       background: #f8fafc; padding: 1.5rem; border-radius: 12px;
       border-left: 4px solid #ba139b;
     }
@@ -127,6 +127,23 @@
       hyphens: auto;
       -webkit-hyphens: auto;
     }
+*/
+    .topic-card {
+  background: #f0f4fd;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.topic-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
     
     /* Papers */
     .paper { padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0; }
@@ -195,9 +212,9 @@
   <p>🔬 We study microbial interactions by infering traits from omics data and simulating microbiomes using metabolic models.</p>
   <div class="keywords">
     <span>Microbiome</span>
-    <span>Network Biology</span>
-    <span>Metagenomics</span>
-    <span>Ecological Interactions</span>
+    <span>Metabolic modeling</span>
+    <span>Trait-based ecology</span>
+    <span>Microbial interactions</span>
   </div>
 </section>
 
@@ -211,7 +228,7 @@
   <h2>People</h2>
   <div class="people-grid">
     <div class="person">
-      <a href="people/johannes.html"><img src="https://www.jsmc-phd.de/assets/images/a/Zimmermann-f1ad53b6.jpg" alt="Johannes Zimmermann"></a>
+      <a href="people/johannes.html"><img src="img/johannes.jpg" alt="Johannes Zimmermann"></a>
       <h3>Johannes Zimmermann</h3>
       <span>Principal Investigator</span>
       <div class="social">
@@ -224,7 +241,7 @@
     </div>
 
     <div class="person">
-      <a href="people/manisha.html"><img src="https://www.microverse-cluster.de/assets/images/d/manisha-goyal-70c0e5c0.jpg" alt="Manisha Goyal"></a>
+      <a href="people/manisha.html"><img src="img/manisha.jpg" alt="Manisha Goyal"></a>
       <h3>Manisha Goyal</h3>
       <span>Postdoctoral Researcher</span>
       <div class="social">
@@ -237,7 +254,7 @@
     </div>
 
     <div class="person">
-      <a href="people/garima.html"><img src="https://www.microverse-cluster.de/assets/images/d/garima_kalakoti-3-acfd470d.jpg" alt="Garima Kalakoti"></a>
+      <a href="people/garima.html"><img src="img/garima.jpg" alt="Garima Kalakoti"></a>
       <h3>Garima Kalakoti</h3>
       <span>PhD Student</span>
       <div class="social">
@@ -268,12 +285,12 @@
       <p>Microbes have long evolutionary past that enables and limits their mode of actions. We ask what are the trade-offs and strategies they use to thrive? What is different in host-associated mirobiomes like C. elegans?</p>
     </div>
     <div class="topic-card">
-      <h3>Diversity and metabolism</h3>
+      <h3>Diversity & metabolism</h3>
       <p>Metabolism is the main driver of microbial diversity. We explore metabolic networks and focus on redox processes. How do oxygen preference and fermentation affect interactions?</p>
     </div>
     <div class="topic-card">
       <h3>Community models</h3>
-      <p>Microbes are never alone! We build metabolic and trait-based models to study community interactions and dynamics. Besides metabolism, what is the effects of microbial predation?</p>
+      <p>Microbes are never alone! We build metabolic and trait-based models to study community interactions and dynamics. Besides metabolism, we are also curious about the effects of microbial predation.</p>
     </div>
   </div>
 </section>
